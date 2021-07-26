@@ -1,0 +1,19 @@
+.header {
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid {
+  text-align: center;
+  margin: 0px 5px 0px 5px;
+}
+
+.grid-header form {
+  margin-bottom: 18px;
+}

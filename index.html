@@ -4,13 +4,42 @@
 <head>
     <title>Ag-Grid example using FinnHub API data</title>
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <script src="fxGrid.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@ag-grid-community/all-modules@25.3.0/dist/styles/ag-grid.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <!--<button onclick="getSelectedRows()">Get Data</button>-->
-    <div id="fxGrid" style="height: 500px; width: 425px;" class="ag-theme-alpine-dark"></div>
+    <div class="header">
+        <h1>AG Grid Tests using API data</h1>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <div class="grid-header">
+                <h2>FX Rates</h2>
+                <h5>US$ base currency</h5>
+            </div>
+            <div id="fxGrid" style="height: 500px; width: 425px;" class="ag-theme-alpine-dark"></div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-header">
+                <h2>FX Symbols by exchange</h2>
+                <form>
+                    <select name="exchange" id="exchange_select">
+                        <option value="Exchange 1">Exchange 1</option>
+                    </select>
+
+                    <button>Search</button>
+                </form>
+            </div>
+            <div id="exchGrid" style="height: 500px; width: 425px;" class="ag-theme-alpine-dark"></div>
+        </div>
+    </div>
 </body>
+
+<!-- bring in grids -->
+<script src="./js/fxGrid.js"></script>
+<script src="./js/exchGrid.js"></script>
 
 </html>
