@@ -26,6 +26,8 @@ button {
 
 select {
   padding: 2px;
+  background-color: rgb(48, 47, 47);
+  color: white;
 }
 
 .header {
