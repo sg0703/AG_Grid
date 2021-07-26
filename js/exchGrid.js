@@ -39,7 +39,7 @@ selectFxForm.addEventListener('submit', (e) => {
     let exchSelect = document.getElementById("exchSelect");
     let exchange = exchSelect.options[exchSelect.selectedIndex].text;
 
-    console.log(exchange)
+    populateGrid(exchange);
 
 })
 
@@ -63,7 +63,7 @@ async function populateFormOptions() {
 }
 
 async function populateGrid(selExchange) {
-    console.log(selExch)
+    console.log(selExchange)
 
     agGrid.simpleHttpRequest({
         url: `https://finnhub.io/api/v1/forex/symbol?exchange=${selExchange}&token=${key}`
@@ -76,7 +76,7 @@ async function populateGrid(selExchange) {
         });
         **/
     
-        fxGridOptions.api.setRowData(processedData);
+        exchGridOptions.api.setRowData(data);
     })
 }
  
