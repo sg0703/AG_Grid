@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-    <title>Ag-Grid example using FinnHub API data</title>
+    <title>AG Grid example using FinnHub.io data</title>
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@ag-grid-community/all-modules@25.3.0/dist/styles/ag-grid.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <!--<button onclick="getSelectedRows()">Get Data</button>-->
     <div class="header">
-        <h1>AG Grid Tests using API data</h1>
+        <h1>AG Grid Tests</h1>
+        <h3><a href="https://finnhub.io/docs/api/forex-exchanges">FinnHub.io</a> Forex API</h3>
     </div>
     <div class="content">
         <div class="grid">
             <div class="grid-header">
-                <h2>FX Rates</h2>
-                <h5>US$ base currency</h5>
+                <h2>Forex Rates</h2>
+                <h4>US$ base currency</h4>
             </div>
             <div id="fxGrid" style="height: 500px; width: 425px;" class="ag-theme-alpine-dark"></div>
         </div>
 
         <div class="grid">
             <div class="grid-header">
-                <h2>FX Symbols by exchange</h2>
+                <h2>Forex Symbols by exchange</h2>
                 <form action="#" id="selectFxForm">
                     <select name="exchange" id="exchSelect">
                         <!-- insert options here -->
