@@ -25,7 +25,7 @@ async function getFxRates() {
     });
 
     let processedData = Object.keys(data.quote).map((key) => { 
-        return { currency: key, quote: data.quote[key] }
+        return { currency: key, quote: `$${data.quote[key]}` }
     });
 
     fxGridOptions.api.setRowData(processedData);
